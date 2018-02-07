@@ -149,15 +149,13 @@
 			</plugin>
 		</plugins>
 	</build>
-	
-	<project>
-		<developers>
-			<developer>
-				<name>Ana Paula</name>
-				<email>anapaulataga@hotmail.com</email>
-			</developer>
-		</developers>
-	</project>
+	<developers>
+		<developer>
+			<name>Ana Paula</name>
+			<email>anapaulataga@hotmail.com</email>
+		</developer>
+	</developers>
+</project>
 	
 	
 	
