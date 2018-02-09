@@ -2,6 +2,8 @@ package br.com.caelum.ingresso.controller;
 
 import br.com.caelum.ingresso.dao.FilmeDao;
 import br.com.caelum.ingresso.model.Filme;
+import br.com.client.ingresso.rest.ImdbClient;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.transaction.annotation.Transactional;
@@ -11,7 +13,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.validation.Valid;
 import java.util.Optional;
-
+import br.com.client.ingresso.rest.*;
 /**
  * Created by nando on 03/03/17.
  */
@@ -21,6 +23,9 @@ public class FilmeController {
 
     @Autowired
     private FilmeDao filmeDao;
+    
+    @Autowired
+	private ImdbClient client;
 
 
     @GetMapping({"/admin/filme", "/admin/filme/{id}"})

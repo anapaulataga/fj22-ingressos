@@ -25,6 +25,7 @@ public class LugarController {
 
     @Autowired
     private SalaDao salaDao;
+    
     @Autowired
     private LugarDao lugarDao;
 
